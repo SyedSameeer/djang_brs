@@ -1,0 +1,115 @@
+{% extends 'myapp/base.html' %}
+{% block content %}
+
+<style>
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    margin-bottom: 0;
+}
+
+/* Heading styles */
+.display-4 {
+    font-size: 3rem;
+    color: #007bff; /* Blue heading color */
+}
+
+/* Lead text styles */
+.lead {
+    font-size: 1.5rem;
+    color: #333; /* Dark gray text color */
+}
+
+/* Divider styles */
+hr {
+    border-top: 2px solid #15ff00; /* Blue divider */
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+/* Content container styles */
+.container {
+    padding: 40px 20px;
+    height: 100%; /* Set height to 100% */
+}
+
+/* Additional styling for term boxes */
+.term-box {
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Term title styles */
+.term-title {
+    font-size: 24px;
+    color: #333; /* Dark gray text color */
+    margin-bottom: 10px;
+}
+
+/* Term text styles */
+.term-text {
+    font-size: 18px;
+    color: #666; /* Medium gray text color */
+    line-height: 1.6;
+}
+
+/* Ensure scroll for the whole page */
+html {
+    overflow-y: scroll;
+}
+</style>
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to EasyBus</h1>
+    <p class="lead">Your hassle-free way to book bus tickets online</p>
+    <hr>
+    <p>Find buses, explore destinations, and grab exciting offers!</p>
+</div>
+
+<div class="container">
+    <!-- Features section -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="term-box">
+                <h2 class="term-title">Discover Amazing Destinations</h2>
+                <p class="term-text">Explore our wide range of destinations and plan your next adventure with ease.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="term-box">
+                <h2 class="term-title">Exclusive Offers</h2>
+                <p class="term-text">Enjoy special discounts and offers on bus tickets, available only through EasyBus.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="term-box">
+                <h2 class="term-title">Effortless Booking</h2>
+                <p class="term-text">Book your tickets quickly and securely online, without any hassle.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional content section -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="term-box">
+                <h2 class="term-title">Effortless Booking</h2>
+                <p class="term-text">Book your tickets quickly and securely online, without any hassle.</p>
+            </div>
+        <div class="col-md-6">
+             <div class="term-box">
+                <h2 class="term-title">Contact Us</h2>
+                <p class="term-text">If you have any questions, feedback, or inquiries, feel free to contact us:</p>
+                   <ul>
+                <li>Email: info@easybus.com</li>
+                <li>Phone: 123-456-7890</li>
+            </ul>
+
+            </div>
+    </div>
+</div>
+{% endblock %}
